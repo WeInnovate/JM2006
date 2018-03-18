@@ -1,4 +1,4 @@
-package com.jm2006.learn.jdbc.dml;
+package com.jm2006.learn.jdbc.dml.stmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
