@@ -1,4 +1,4 @@
-package img;
+package com.jm2006.learn.jdbc.img;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

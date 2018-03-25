@@ -1,5 +1,0 @@
-create table jm2006_login (user_name varchar, password varchar);
-
-SELECT * FROM JM2006_LOGIN
-
-INSERT INTO JM2006_LOGIN VALUES('A', '1')

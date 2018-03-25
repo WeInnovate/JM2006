@@ -1,4 +1,4 @@
-package tcl;
+package com.jm2006.learn.jdbc.tcl;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ public class AutoCommitExample {
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DbUtil.getCon();
+			Connection con = DbUtil.getConFromPropertyFile();
 			con.setAutoCommit(false);
 
 			Statement stmt = con.createStatement();
@@ -27,7 +27,7 @@ public class AutoCommitExample {
 				System.out.println(rs.getString(1)+" "+rs.getString(2));
 			}
 			
-			con.commit();
+//			con.commit();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
