@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+
+	<form action="register" method="post">
+
+
+		<table border="1px">
+
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" name="un" /></td>
+			</tr>
+
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pass" /></td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email" /></td>
+			</tr>
+
+			<tr>
+				<td>Mobile</td>
+				<td><input type="number" name="mob" /></td>
+			</tr>
+
+
+			<tr>
+				<td>Gender</td>
+				<td>Male: <input type="radio" name="gender" value="Male" />&nbsp;Female:
+					<input type="radio" name="gender" value="Female" /></td>
+			</tr>
+
+			<tr>
+				<td>Courses</td>
+				<td>M1: <input type="checkbox" name="course" value="M1" />&nbsp;M2:
+					<input type="checkbox" name="course" value="M2" /> &nbsp;M3: <input
+					type="checkbox" name="course" value="M3" />
+				</td>
+			</tr>
+
+			<tr>
+				<td>Country</td>
+				<td><select name="country">
+						<option value="">--Select--</option>
+						<option value="India">IND</option>
+						<option value="United States">US</option>
+						<option value="United Kingdom">UK</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>Comment</td>
+				<td><textarea name="comment"></textarea></td>
+			</tr>
+
+
+			<tr>
+				<td><input type="reset" value="Reset" /></td>
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>
