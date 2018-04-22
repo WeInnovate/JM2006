@@ -9,6 +9,11 @@
 <body>
 <hr />
 <h1>Footer</h1>
-<%= request.getParameter("insName") %>
+<%= request.getParameter("insName")+" from user" %>
+<br />
+
+<%= application.getInitParameter("institute")+ " from wex.xml" %>
+<br />
+${initParam.institute}<Span> from web.xml(EL)</Span>
 </body>
 </html>

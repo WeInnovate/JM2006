@@ -16,7 +16,7 @@
 
 <jsp:include page="footer.jsp">
 
-<jsp:param value="InfoCampus" name="insName"/>
+<jsp:param value="InfoCampus Temp" name="insName"/>
 </jsp:include>
 </body>
 </html>
