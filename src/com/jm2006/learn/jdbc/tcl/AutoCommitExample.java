@@ -15,7 +15,7 @@ public class AutoCommitExample {
 			con.setAutoCommit(false);
 
 			Statement stmt = con.createStatement();
-			int i = stmt.executeUpdate("INSERT INTO JM2006_LOGIN VALUES('A', '1')");
+			int i = stmt.executeUpdate("INSERT INTO JM2006_LOGIN VALUES('C', '1')");
 
 			if (i > 0) {
 				System.out.println("Record Inserted successfully.");

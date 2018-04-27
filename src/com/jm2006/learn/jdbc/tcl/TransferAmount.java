@@ -19,13 +19,13 @@ public class TransferAmount {
 			con = DbUtil.getConFromPropertyFile();
 			con.setAutoCommit(false);
 
-			PreparedStatement pstmtSalary = con
+			 PreparedStatement pstmtSalary = con
 					.prepareStatement("UPDATE ACCOUNT_SUMMARY SET BALANCE = BALANCE + ? WHERE CUST_NAME = ?");
 			PreparedStatement pstmtDebit = con
 					.prepareStatement("UPDATE ACCOUNT_SUMMARY SET BALANCE = BALANCE - ? WHERE CUST_NAME = ?");
 			PreparedStatement pstmtCredit = con
 					.prepareStatement("UPDATE ACCOUNT_SUMMARY SET BALANCE = BALANCE + ? WHERE CUST_NAME = ?");
-
+           
 			Scanner scan = new Scanner(System.in);
 			System.out.print("Please enter your salaried emp name: ");
 			String salariedEmp = scan.nextLine();
@@ -48,7 +48,7 @@ public class TransferAmount {
 			if (salaryCredit == 1)
 				System.out.println("Salary credited.");
 
-			s1 = con.setSavepoint("S1");
+			s1 = con.setSavepoint("s1");
 
 			pstmtDebit.setDouble(1, amount);
 			pstmtDebit.setString(2, payee);
